@@ -2,6 +2,8 @@ body{
     margin:0px;
     padding: 0px;
     font-family: Georgia;
+    /* background: url(../IMAGES/welcome.jpg); */
+    background-image: radial-gradient(red, yellow, purple);
 }
 *{
     box-sizing: border-box;
@@ -27,12 +29,17 @@ input{
     position: relative;
 }
 
+
+a.logo {
+    display: flex;
+    justify-content: flex-end;
+}
 nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 0px 30px;
-    background-color:lavender;
+    background-image: linear-gradient(to right, blue, brown, gray,lavender,orange,olive,pink);
     box-shadow: 2px 2px 20px rgba(255, 151, 103, 0.164);
     z-index: 1;
     width:100%;
@@ -308,3 +315,9 @@ nav ul li a:hover{
         letter-spacing: 1px;
         font-weight: 700;
         margin: 0px;
+    }
+
+.greetings {
+    font-style: italic;
+    font-family: Georgia;
+}
