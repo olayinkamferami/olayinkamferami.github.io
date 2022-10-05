@@ -3,7 +3,7 @@ body{
     padding: 0px;
     font-family: Georgia;
     /* background: url(../IMAGES/welcome.jpg); */
-    background-image: radial-gradient(red, yellow, purple);
+    background-image: linear-gradient(gray, red);
 }
 *{
     box-sizing: border-box;
@@ -34,12 +34,15 @@ a.logo {
     display: flex;
     justify-content: flex-end;
 }
+.title{
+    color: black;
+}
 nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0px 30px;
-    background-image: linear-gradient(to right, blue, brown, gray,lavender,orange,olive,pink);
+    padding: 0px 10px;
+    background-image: linear-gradient( gray);
     box-shadow: 2px 2px 20px rgba(255, 151, 103, 0.164);
     z-index: 1;
     width:100%;
@@ -49,7 +52,7 @@ nav{
 }
 nav ul{
     display: flex;
-    margin:0px;
+    margin: 1px;
     padding: 0px;
 }
 nav ul li a{
@@ -61,7 +64,7 @@ nav ul li a{
     font-size: 0.9rem;
     text-transform: uppercase;
     font-weight: 400;
-    color:green;
+    color:rosybrown;
     letter-spacing: 1px;
     transition: 0.4s ease-in-out;
 }
@@ -71,7 +74,7 @@ nav ul li a{
 }
 nav ul li a:hover{
     border-radius: 5px;
-    background-color: lightblue;
+    background-color: black;
     color:#fff;
     box-shadow: 5px 10px 30px rgba(219, 74, 6, 0.5);
     transition: all ease 0.2s;
@@ -85,7 +88,6 @@ nav ul li a:hover{
     top:50%;
     transform: translate(-50%,-50%);
     width:90%;
-
 }
 .home-img{
     width:500px;
@@ -103,16 +105,16 @@ nav ul li a:hover{
     margin: 20px;
 }
 .home-text h1{
-    font-size: 3.5rem;
+    font-size: 50px;
     line-height: 55px;
-    color:#222e29;
+    color:black;
     letter-spacing: 1px;
-    font-weight: 700;
+    font-weight: 1000;
     margin: 0px;
 }
 .home-text p{
-    font-size: 1rem;
-    color:#777474;
+    font-size: 20px;
+    color:#030303;
 }
 .home-text span{
     color: #ff0000;
@@ -137,7 +139,7 @@ nav ul li a:hover{
 .arrow{
     align-self: end;
     width:50%;
-    border-right: 1px solid #ff0000;
+    border-right: 1px solid black;
     height: 20%;
     margin-bottom:20em ;
     position: absolute;
@@ -153,7 +155,7 @@ nav ul li a:hover{
     height: 0;
     border-style: solid;
     border-width: 11px 11px 0px 11px;
-    border-color: #ff0000 transparent transparent transparent;
+    border-color: black transparent transparent transparent;
     right: -0.7em;
     bottom: -2px;
 }
@@ -203,17 +205,17 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 20px 30px;
+    margin: 50px 450px;
 }
 .box{
         display: flex;
-        flex-direction: column;
+        flex-direction: center;
         justify-content: center;
         align-items: center;
         width:300px;
         height: 400px;
         text-align: center;
-        box-shadow: 2px 2px 20px rgba(90,118,253,0.15);
+        box-shadow: 2px 2px 20px rgba(90, 253, 163, 0.15);
         border-radius: 10px;
         background-color: #fff;
         margin: 20px;
@@ -317,7 +319,31 @@ nav ul li a:hover{
         margin: 0px;
     }
 
-.greetings {
-    font-style: italic;
-    font-family: Georgia;
+
+footer{
+    width:100%;
+    text-align: center;
+    padding: 0px 5%;
+    border-top: 1px solid rgba(231, 9, 9, 0.2);
+}
+footer a,
+footer p{
+    color:#000000;
+}
+
+.greetings{
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 50px;
+    padding-bottom: 5px;
+    color:orange;
+}
+.pro{
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.pics{
+    display: flex;
 }
